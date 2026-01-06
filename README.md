@@ -18,18 +18,3 @@ The `aus_analyzer` package needs to be compiled separately using `maturin`. Cont
 Install the dependencies listed above, and compile the Cython code, then follow these steps:
 1. Specify the location of your audio corpus in the `train.py` file, using the `TRAINING_PATH` variable.
 2. Run the `train.py` program. NOTE: Before running, make sure that file locations are correctly specified.
-
-## File descriptions
-`corpus.py` - Contains functionality for loading all audio files in a given directory.
-
-`dataset.py` - Contains the definition for a `torch.utils.data.Dataset` subclass, `AudioDataset`.
-
-`featurizer.py` - Contains functionality for featurizing audio.
-
-`model_definition.py` - Contains the model definition.
-
-`predictor.py` - Contains functionality for making predictions based on a sequence of audio frames and a given model.
-
-`train.py` - Contains functionality for training models.
-
-`train_hpc.py` - A modified version of `train.py` for running on the University of Iowa Argon high-performance computing system.
